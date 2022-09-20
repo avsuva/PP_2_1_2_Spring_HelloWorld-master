@@ -13,14 +13,14 @@ public class App {
         HelloWorld bean2 =
                 (HelloWorld) applicationContext.getBean("helloworld");
 
-        System.out.println("HelloWorld" + " — " + bean1.equals(bean2));
+        System.out.println("HelloWorld" + " — " + (bean1==bean2));
 
         Cat bean3 =
                 (Cat) applicationContext.getBean("cat");
         Cat bean4 =
                 (Cat) applicationContext.getBean("cat");
 
-        System.out.println("Cat" + " — " + bean3.equals(bean4));
+        System.out.println("Cat" + " — " + (bean3==bean4));
 
 
 
